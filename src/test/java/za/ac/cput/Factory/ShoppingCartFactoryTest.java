@@ -4,9 +4,9 @@
    Date: 9 June 2021
  */
 
-package ac.za.cput.Factory;
+package za.ac.cput.Factory;
 
-import ac.za.cput.Entity.ShoppingCart;
+import za.ac.cput.Entity.ShoppingCart;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
