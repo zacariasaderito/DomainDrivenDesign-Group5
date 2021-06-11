@@ -1,5 +1,9 @@
 package za.ac.cput.Entity;
 
+/**Author: Chadleigh Dunbar (218065256)
+ * Responsible for the Payment Entity
+ */
+
 public class Payment{
 
     private String paymentId;
