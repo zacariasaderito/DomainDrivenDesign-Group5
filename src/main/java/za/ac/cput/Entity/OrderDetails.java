@@ -6,10 +6,10 @@ package za.ac.cput.Entity;
  Responsible for Order Details Entity**/
 public class OrderDetails
 {
-    private String orderId;
-    private String cusId;
+    private int orderID;
+    private int cusId;
     private String orderDate;
-    private String shippingId;
+    private int shippingId;
     private String shippingDate;
     private String selectedAddress;
     private double shippingCost;
@@ -20,7 +20,7 @@ public class OrderDetails
     public boolean cancelOrder;**/
     private OrderDetails(Builder builder){
         this.cusId = builder.cusId;
-        this.orderId = builder.orderId;
+        this.orderID = builder.orderID;
         this.orderDate = builder.orderDate;
         this.orderPrice = builder.orderPrice;
         this.shippingId = builder.shippingId;
@@ -33,7 +33,7 @@ public class OrderDetails
     @Override
     public String toString() {
         return "OrderDetails{" +
-                "orderID=" + orderId +
+                "orderID=" + orderID +
                 ", cusId=" + cusId +
                 ", orderDate='" + orderDate + '\'' +
                 ", shippingId=" + shippingId +
@@ -46,69 +46,59 @@ public class OrderDetails
     }
 
     public static class Builder{
-        private String orderId;
-        private String cusId;
+        private int orderID;
+        private int cusId;
         private String orderDate;
-        private String shippingId;
+        private int shippingId;
         private String shippingDate;
         private String selectedAddress;
         private double shippingCost;
         private double orderPrice;
         private double totalPrice;
 
-        public Builder setOrderId(String orderId) {
-            this.orderId = orderId;
-            return this;
+        public void setOrderID(int orderID) {
+            this.orderID = orderID;
         }
 
-        public Builder setCusId(String cusId) {
+        public void setCusId(int cusId) {
             this.cusId = cusId;
-            return this;
         }
 
-        public Builder setOrderDate(String orderDate) {
+        public void setOrderDate(String orderDate) {
             this.orderDate = orderDate;
-            return this;
         }
 
-        public Builder setShippingId(String shippingId) {
+        public void setShippingId(int shippingId) {
             this.shippingId = shippingId;
-            return this;
         }
 
-        public Builder setShippingDate(String shippingDate) {
+        public void setShippingDate(String shippingDate) {
             this.shippingDate = shippingDate;
-            return this;
         }
 
-        public Builder setSelectedAddress(String selectedAddress) {
+        public void setSelectedAddress(String selectedAddress) {
             this.selectedAddress = selectedAddress;
-            return this;
         }
 
-        public Builder setShippingCost(double shippingCost) {
+        public void setShippingCost(double shippingCost) {
             this.shippingCost = shippingCost;
-            return this;
         }
 
-        public Builder setOrderPrice(double orderPrice) {
+        public void setOrderPrice(double orderPrice) {
             this.orderPrice = orderPrice;
-            return this;
         }
 
-        public Builder setTotalPrice(double totalPrice) {
+        public void setTotalPrice(double totalPrice) {
             this.totalPrice = totalPrice;
-            return this;
         }
 
         public OrderDetails build(){
             return new OrderDetails(this);
         }
-
         //This is my copy of the builder class
         public Builder copy(OrderDetails orderDetails){
             this.cusId = orderDetails.cusId;
-            this.orderId = orderDetails.orderId;
+            this.orderID = orderDetails.orderID;
             this.orderDate = orderDetails.orderDate;
             this.orderPrice = orderDetails.orderPrice;
             this.shippingId = orderDetails.shippingId;
