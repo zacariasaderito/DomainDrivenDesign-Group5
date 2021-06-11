@@ -1,3 +1,9 @@
+/* ShoppingCart.java
+   Entity for ShoppingCart
+   Author: Christopher Doolings
+   Date: 9 June 2021
+ */
+
 package za.ac.cput.Entity;
 
 public class ShoppingCart {
@@ -22,6 +28,7 @@ public class ShoppingCart {
                 '}';
     }
 
+    //Inner class
     public static class Builder {
         private String customerId, productId;
         private int quantity;
@@ -50,6 +57,7 @@ public class ShoppingCart {
             return new ShoppingCart(this);
         }
 
+        //Copy of ShoppingCart
         public Builder copy(ShoppingCart shoppingCart) {
             this.customerId = shoppingCart.customerId;
             this.productId = shoppingCart.productId;
