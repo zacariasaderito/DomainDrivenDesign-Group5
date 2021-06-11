@@ -7,7 +7,7 @@ Date: 11 June 2021
 */
 
 public class Product {
-    private int prodId;
+    private String prodId;
     private String prodName;
     private double prodPrice;
 
@@ -27,11 +27,11 @@ public class Product {
     }
 
     public static class Builder{
-        private int prodId;
+        private String prodId;
         private String prodName;
         private double prodPrice;
 
-        public Builder setProdId(int prodId) {
+        public Builder setProdId(String prodId) {
             this.prodId = prodId;
             return this;
         }
