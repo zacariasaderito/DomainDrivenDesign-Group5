@@ -1,7 +1,9 @@
 package za.ac.cput.Entity;
 
-/**Author: Chadleigh Dunbar (218065256)
- * Responsible for the Payment Entity
+/** Payment.java
+ * Entity for Payment
+ * Author: Chadleigh Dunbar (218065256)
+ * Date: 11 June 2021
  */
 
 public class Payment{
@@ -23,12 +25,12 @@ public class Payment{
         private String paymentId;
         private String paymentType;
 
-        public Builder PaymentId(String paymentId) {
+        public Builder setPaymentId(String paymentId) {
             this.paymentId = paymentId;
             return this;
         }
 
-        public Builder PaymentType(String paymentType) {
+        public Builder setPaymentType(String paymentType) {
             this.paymentType = paymentType;
             return this;
         }
@@ -37,7 +39,11 @@ public class Payment{
             return new Payment(this);
         }
 
-
+        public Builder copy(Payment payment) {
+            this.paymentId = payment.paymentId;
+            this.paymentType = payment.paymentType;
+            return this;
+        }
     }
 
     @Override
