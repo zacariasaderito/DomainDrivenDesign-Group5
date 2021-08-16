@@ -1,4 +1,4 @@
-package za.ac.cput.Entity;
+package za.ac.cput.entity;
 /** OrderDetails.java
  * Entity for Shopping Cart
  * Author: Mehluli Dlamini (219105359)

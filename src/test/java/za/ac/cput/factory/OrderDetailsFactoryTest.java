@@ -1,13 +1,12 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 /** OrderDetailsFactory.java
  *  Testing the Factory for Order Details
  * Author: Mehluli Dlamini (219105359)
  * 11 June 2021
  **/
 import org.junit.jupiter.api.Test;
-import za.ac.cput.Entity.OrderDetails;
+import za.ac.cput.entity.OrderDetails;
 
-import static org.junit.jupiter.api.Assertions.*;
 class OrderDetailsFactoryTest {
     @Test
     void createOrderDetails() {

@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 /**
  * ShippingDetailsFactory.java
  * Shipping Details Factory
@@ -6,10 +6,8 @@ package za.ac.cput.Factory;
  * 11 June 2021
  **/
 
-import za.ac.cput.Entity.ShippingDetails;
+import za.ac.cput.entity.ShippingDetails;
 import za.ac.cput.Util.GenericHelper;
-
-import java.util.UUID;
 
 public class ShippingDetailsFactory {
     public static ShippingDetails getShippingDetails(String shippingType, double shippingCost){

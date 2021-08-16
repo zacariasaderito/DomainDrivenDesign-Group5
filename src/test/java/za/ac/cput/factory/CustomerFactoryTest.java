@@ -1,7 +1,6 @@
-package za.ac.cput.Factory;
-import za.ac.cput.Entity.Customer;
+package za.ac.cput.factory;
+import za.ac.cput.entity.Customer;
 import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.*;
 
 /*Customer.java
 Entity for Customer

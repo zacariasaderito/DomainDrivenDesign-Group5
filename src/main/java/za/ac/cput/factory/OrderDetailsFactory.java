@@ -1,5 +1,5 @@
-package za.ac.cput.Factory;
-import za.ac.cput.Entity.OrderDetails;
+package za.ac.cput.factory;
+import za.ac.cput.entity.OrderDetails;
 import za.ac.cput.Util.GenericHelper;
 /** OrderDetailsFactory.java
  *  Factory for Order Details

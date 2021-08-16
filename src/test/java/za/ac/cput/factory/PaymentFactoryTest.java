@@ -1,8 +1,7 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 
 import org.junit.jupiter.api.Test;
-import za.ac.cput.Entity.Payment;
-import static org.junit.jupiter.api.Assertions.*;
+import za.ac.cput.entity.Payment;
 
 /** PaymentFactoryTest.java
  *  Factory Testing for Payment

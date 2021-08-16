@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 
 /* ProductFactoryTest.java
 Testing the Factory for Product
@@ -7,8 +7,7 @@ Date: 11 June 2021
 */
 
 import org.junit.jupiter.api.Test;
-import za.ac.cput.Entity.Product;
-import static org.junit.jupiter.api.Assertions.*;
+import za.ac.cput.entity.Product;
 
 class ProductFactoryTest {
 

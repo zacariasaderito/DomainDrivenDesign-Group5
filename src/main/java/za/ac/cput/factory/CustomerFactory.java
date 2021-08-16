@@ -1,5 +1,5 @@
-package za.ac.cput.Factory;
-import za.ac.cput.Entity.Customer;
+package za.ac.cput.factory;
+import za.ac.cput.entity.Customer;
 import java.util.UUID;
 
 /*CustomerFactory.java

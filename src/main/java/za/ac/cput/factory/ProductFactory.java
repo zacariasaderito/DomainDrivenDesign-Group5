@@ -1,4 +1,4 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 
 /* ProductFactory.java
 Factory for Product
@@ -6,7 +6,7 @@ Author: Moegammad Ameer Dollie (218336934)
 Date: 11 June 2021
 */
 
-import za.ac.cput.Entity.Product;
+import za.ac.cput.entity.Product;
 import za.ac.cput.Util.GenericHelper;
 
 public class ProductFactory{

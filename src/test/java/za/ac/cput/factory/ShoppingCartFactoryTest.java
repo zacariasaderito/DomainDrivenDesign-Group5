@@ -4,12 +4,10 @@
    Date: 9 June 2021
  */
 
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 
-import za.ac.cput.Entity.ShoppingCart;
+import za.ac.cput.entity.ShoppingCart;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ShoppingCartFactoryTest {
 

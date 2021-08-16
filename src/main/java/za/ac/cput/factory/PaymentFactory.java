@@ -1,6 +1,6 @@
-package za.ac.cput.Factory;
+package za.ac.cput.factory;
 
-import za.ac.cput.Entity.Payment;
+import za.ac.cput.entity.Payment;
 import java.util.UUID;
 
 /** PaymentFactory.java

@@ -4,7 +4,7 @@
    Date: 9 June 2021
  */
 
-package za.ac.cput.Entity;
+package za.ac.cput.entity;
 
 public class ShoppingCart {
     private String customerId, productId;
