@@ -11,9 +11,9 @@ import za.ac.cput.Util.GenericHelper;
 
 public class ShippingDetailsFactory {
     public static ShippingDetails getShippingDetails(String shippingType, double shippingCost){
-        String shippingId = GenericHelper.generateAnId();
+//        String shippingId = GenericHelper.generateAnId();
         return new ShippingDetails.Builder()
-                    .setShippingId(shippingId)
+                    .setShippingId(GenericHelper.generateAnId())
                     .setShippingType(shippingType)
                     .setShippingCost(shippingCost)
                     .build();

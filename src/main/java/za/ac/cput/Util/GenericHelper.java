@@ -10,7 +10,7 @@ public class GenericHelper {
         public static String generateAnId() {
         return UUID.randomUUID().toString(); }
 
-         public static String generateDate() {
+    public static String generateDate() {
           Date date = Calendar.getInstance().getTime();
           DateFormat dateFormat = new SimpleDateFormat("dd-mm-yyyy hh:mm:ss");
           String dateString = dateFormat.format(date);

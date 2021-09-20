@@ -1,18 +1,26 @@
 package za.ac.cput.repository.implementation;
 
 import za.ac.cput.entity.ShippingDetails;
-import za.ac.cput.repository.ShippingDetailsRepository;
+import za.ac.cput.repository.IShippingDetailsRepository;
 
 import java.util.HashSet;
 import java.util.Set;
 
-public class ShippingDetailsRepositoryImplementation implements ShippingDetailsRepository {
+
+public class ShippingDetailsRepository implements IShippingDetailsRepository {
 
     private static ShippingDetailsRepository repository = null;
     private Set<ShippingDetails>  shippingDetailsDB;
 
-    public ShippingDetailsRepositoryImplementation() {
+    public ShippingDetailsRepository() {
         this.shippingDetailsDB = new HashSet<>();
+    }
+
+    public static ShippingDetailsRepository getRepository() {
+        if (repository == null) {
+            repository = new ShippingDetailsRepository();
+        }
+        return repository;
     }
 
     @Override
@@ -50,6 +58,7 @@ public class ShippingDetailsRepositoryImplementation implements ShippingDetailsR
         return false;
     }
 
+    @Override
     public Set<ShippingDetails> getAll() {
         return this.shippingDetailsDB;
     }

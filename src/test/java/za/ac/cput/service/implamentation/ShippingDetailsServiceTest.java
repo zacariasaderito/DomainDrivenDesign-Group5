@@ -1,10 +1,10 @@
-package za.ac.cput.repository.implementation;
+package za.ac.cput.service.implamentation;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ShippingDetailsRepositoryImplementationTest {
+class ShippingDetailsServiceTest {
 
     @Test
     void create() {
@@ -20,9 +20,5 @@ class ShippingDetailsRepositoryImplementationTest {
 
     @Test
     void delete() {
-    }
-
-    @Test
-    void getAll() {
     }
 }
