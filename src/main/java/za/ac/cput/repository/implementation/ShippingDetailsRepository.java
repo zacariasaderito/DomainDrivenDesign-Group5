@@ -1,6 +1,7 @@
 package za.ac.cput.repository.implementation;
 
 import za.ac.cput.entity.ShippingDetails;
+import za.ac.cput.factory.ShippingDetailsFactory;
 import za.ac.cput.repository.IShippingDetailsRepository;
 
 import java.util.HashSet;
@@ -38,11 +39,11 @@ public class ShippingDetailsRepository implements IShippingDetailsRepository {
         return null;
     }
 
-    @Override
-    public ShippingDetails update(ShippingDetails shippingDetails) {
+//    @Override
+    public ShippingDetails update(ShippingDetails shippingDetails, String shippingType, double shippingCost) {
         boolean deleteShipping = delete(shippingDetails.getShippingId());
         if (deleteShipping) {
-            this.shippingDetailsDB.add(shippingDetails);
+            this.shippingDetailsDB.add(ShippingDetailsFactory.getShippingDetails(shippingType, shippingCost));
             return shippingDetails;
         }
         return null;

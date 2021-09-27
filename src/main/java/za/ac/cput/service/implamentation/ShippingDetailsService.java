@@ -33,9 +33,10 @@ public class ShippingDetailsService implements IShippingDetailsService {
         return this.shippingRepository.read(s);
     }
 
+    // Requires attention
     @Override
     public ShippingDetails update(ShippingDetails shippingDetails) {
-        return this.shippingRepository.update(shippingDetails);
+        return this.shippingRepository.update(shippingDetails, "", 00);
     }
 
     @Override
