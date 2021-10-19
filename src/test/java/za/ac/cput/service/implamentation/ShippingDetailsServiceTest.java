@@ -5,7 +5,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import za.ac.cput.entity.ShippingDetails;
 import za.ac.cput.factory.ShippingDetailsFactory;
-import za.ac.cput.repository.implementation.ShippingDetailsRepository;
+//import za.ac.cput.repository.implementation.ShippingDetailsRepository;
 
 import java.util.Set;
 
@@ -20,7 +20,7 @@ class ShippingDetailsServiceTest {
 
     @BeforeAll
     static void factory() {
-        service = ShippingDetailsService.getShippingService();
+//        service = ShippingDetailsService.getShippingService();
         shippingDetailsByRoad = ShippingDetailsFactory.getShippingDetails("Road", 200);
         shippingDetailsByAir = ShippingDetailsFactory.getShippingDetails("Air", 400);
 

@@ -1,5 +1,9 @@
 package za.ac.cput.entity;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import java.io.Serializable;
+
 /**
  * ShippingDetails.java
  * Shipping Details Entity
@@ -7,13 +11,13 @@ package za.ac.cput.entity;
  * 11 June 2021
  **/
 
-public class ShippingDetails {
+@Entity
+public class ShippingDetails implements Serializable{
 
+    @Id
     private String shippingId;
     private String shippingType;
     private double shippingCost;
-
-    protected ShippingDetails(){}
 
     private ShippingDetails (Builder builder){
         this.shippingId = builder.shippingId;
@@ -33,9 +37,11 @@ public class ShippingDetails {
         return shippingCost;
     }
 
-    public void updateShippingInfo(){
+    public void updateShippingInfo(double cost){
         /**Code Update Shipping Information**/
+
     }
+
 
     @Override
     public String toString() {
